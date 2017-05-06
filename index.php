@@ -28,13 +28,13 @@
       
 
       	?>
-      <tr>
+      <?php echo "<tr>"; ?>	
        
       <td style='width: 10%;'> <?php echo "<img class = 'newappIcon' src='".$row['imagen_servicio']."'> "    ?> </td>
       <td><h1 id = "message"><?php echo $row['nombre_servicio']?></h1>
       <p class='description'></p><?php echo $row['descripcion_servicio']?></td>
 
-      </tr>
+	<?php echo "</tr>"; ?>
      <?php 
     
      }
@@ -49,8 +49,11 @@
 	
 	</div>
 	<br>
-
+<div style='border: #ED7D2E 2px solid;width: 92%;margin-left: 3%;'>
 <img class = 'newappIcon' src='images/abajo.png'>
+</div>
+<br>
+<br>
 	
 </body>
 </html>
